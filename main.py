@@ -6,10 +6,6 @@ while True:
     print("4.Exit")
     opt=int(input("Choose the option :"))
 
-    if opt==4:
-        print("Thank for inquiry.")
-        break
-
     if opt==1:
         print("The Train Schedules are below :")
         print("TRAIN NUMBER	TRAIN NAME	                                TRAIN TYPE	RUN DAYS	        DEPARTURE TIME(HRS)	ARRIVAL TIME(HRS)")
@@ -38,5 +34,9 @@ while True:
         print("{}      {}     {}      {}".format(name, trainno, day, seat))
         print()
 
+    elif opt==4:
+        print("Thank for inquiry.")
+        break
+        
     else:
         print("Choose the appropriate option.")
